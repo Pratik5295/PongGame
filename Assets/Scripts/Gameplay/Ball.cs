@@ -8,19 +8,24 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rigi;
 
     public float moveSpeed;
+    public float originalSpeed;
+    float yVel;
+    float xVel;
+
 
     private void Awake()
     {
         startPosition = this.transform.position;
-
+        originalSpeed = moveSpeed;
         rigi = this.GetComponent<Rigidbody2D>();
 
-        StartGame();
     }
 
-    public void StartGame()
+    public virtual void StartGame()
     {
-        rigi.velocity = new Vector2(Random.Range(0f, 5f) * moveSpeed, Random.Range(0f, 3f) * moveSpeed);
+        xVel = Random.Range(-5f, 5f);
+        yVel = Random.Range(0f, 3f);
+        rigi.velocity = new Vector2(xVel* moveSpeed, yVel * moveSpeed);
     }
 
     public void ResetPosition()
@@ -28,5 +33,12 @@ public class Ball : MonoBehaviour
         this.transform.position = startPosition;
 
         rigi.velocity = new Vector2(0, 0);
+        moveSpeed = originalSpeed;
+    }
+
+    public void IncreaseSpeed()
+    {
+        moveSpeed += 0.5f;
+        rigi.AddForce(rigi.velocity * moveSpeed);
     }
 }

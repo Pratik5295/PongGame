@@ -10,8 +10,13 @@ public class ScoreWall : MonoBehaviour
     {
         if(collision.gameObject.tag == "Ball")
         {
-            GameManager.instance.currentState = GameManager.GameState.GameOver;
-            collision.gameObject.GetComponent<Ball>().ResetPosition();
+            GameManager.instance.GameOver();
+            
+        }
+
+        if(collision.gameObject.tag == "PowerUp")
+        {
+            collision.gameObject.SetActive(false);
         }
     }
 }
