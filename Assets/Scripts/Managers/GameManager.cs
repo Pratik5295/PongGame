@@ -53,7 +53,7 @@ public class GameManager : MonoBehaviour
             gameTimer = 0f;
         }
 
-        if(powerTimer >= 5f)
+        if(powerTimer >= 20f)
         {
             powerObject.gameObject.SetActive(true);
             powerObject.StartPower();
