@@ -19,12 +19,19 @@ public class Ball : MonoBehaviour
         originalSpeed = moveSpeed;
         rigi = this.GetComponent<Rigidbody2D>();
 
+        Physics2D.IgnoreLayerCollision(3, 6);
+
     }
 
     public virtual void StartGame()
     {
-        xVel = Random.Range(-5f, 5f);
+        xVel = Random.Range(-7f, 7f);
         yVel = Random.Range(0f, 3f);
+
+        if(xVel == 0)
+        {
+            xVel = 2f;
+        }
         rigi.velocity = new Vector2(xVel* moveSpeed, yVel * moveSpeed);
     }
 

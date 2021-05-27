@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7479694687395947809}
   - component: {fileID: 7290978890104302023}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7479602556599399287}
   - component: {fileID: 7291079097516356143}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 7484414382309119830}
   - component: {fileID: 7484414382309119833}
   - component: {fileID: 7484414382309119832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ Transform:
   - {fileID: 7479602556599399287}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &7370168168645002763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +268,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
-  moveSpeed: 2
+  moveSpeed: 3.2
+  originalSpeed: 0
 --- !u!1 &7483148405125010429
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,7 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7479828718550144897}
   - component: {fileID: 7387545489860618921}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}

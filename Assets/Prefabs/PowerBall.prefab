@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6905619518290455141}
   - component: {fileID: 6716643270920629053}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,13 +96,13 @@ GameObject:
   - component: {fileID: 6900826908135329348}
   - component: {fileID: 6900826908135329355}
   - component: {fileID: 2904849049785823561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PowerBall
   m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6905373142959340307
 Transform:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startPosition: {x: 0, y: 0, z: 0}
-  moveSpeed: 1.5
+  moveSpeed: 5
   originalSpeed: 0
 --- !u!1 &6899878641282883395
 GameObject:
@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6905254116941741107}
   - component: {fileID: 6716995780978733269}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shine
   m_TagString: Untagged
   m_Icon: {fileID: 0}

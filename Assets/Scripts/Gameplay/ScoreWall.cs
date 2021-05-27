@@ -10,6 +10,14 @@ public class ScoreWall : MonoBehaviour
     {
         if(collision.gameObject.tag == "Ball")
         {
+            if(player.name == "Player1")
+            {
+                GameUI.instance.ShowVictory("Player 2 has won!");
+            }
+            else if(player.name == "Player2")
+            {
+                GameUI.instance.ShowVictory("Player 1 has won!");
+            }
             GameManager.instance.GameOver();
             
         }

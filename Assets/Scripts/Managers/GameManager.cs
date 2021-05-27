@@ -60,6 +60,13 @@ public class GameManager : MonoBehaviour
             powerTimer = 0f;
         }
 
+        //Button to quit the game
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
     }
 
     public void StartGame()
@@ -77,6 +84,5 @@ public class GameManager : MonoBehaviour
         gameTimer = 0f;
         ball.ResetPosition();
         GameUI.instance.TurnMainMenuOn();
-        GameUI.instance.ShowVictory();
     }
 }

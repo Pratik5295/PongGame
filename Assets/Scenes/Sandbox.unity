@@ -315,6 +315,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1797059161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 785330935563371612, guid: 2d2e6a588ff06344dbd426a4caabb749, type: 3}
+  m_PrefabInstance: {fileID: 785330935021905842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1813483123
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,21 +681,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2904849049785823561, guid: a8de82177bc5cfc468d1e7cad0738859, type: 3}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 6899626405541729551, guid: a8de82177bc5cfc468d1e7cad0738859, type: 3}
       propertyPath: m_Name
       value: PowerBall
-      objectReference: {fileID: 0}
-    - target: {fileID: 6899626405541729551, guid: a8de82177bc5cfc468d1e7cad0738859, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6900826908135329355, guid: a8de82177bc5cfc468d1e7cad0738859, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6905373142959340307, guid: a8de82177bc5cfc468d1e7cad0738859, type: 3}
       propertyPath: m_RootOrder
@@ -882,6 +875,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1398875154}
+    - target: {fileID: 5936910924505921593, guid: 493146769b5b4404d8e20d969d3756c2, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1797059161}
     - target: {fileID: 5936910924621488697, guid: 493146769b5b4404d8e20d969d3756c2, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -986,10 +983,6 @@ PrefabInstance:
     - target: {fileID: 7483072798713793565, guid: a459b28edb3132049923e96b1328ad8a, type: 3}
       propertyPath: m_Name
       value: Ball
-      objectReference: {fileID: 0}
-    - target: {fileID: 7484414382309119832, guid: a459b28edb3132049923e96b1328ad8a, type: 3}
-      propertyPath: moveSpeed
-      value: 3.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a459b28edb3132049923e96b1328ad8a, type: 3}

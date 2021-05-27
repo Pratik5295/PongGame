@@ -67,20 +67,9 @@ public class GameUI : MonoBehaviour
         instructionPanel.SetActive(false);
     }
 
-    public void ShowVictory()
+    public void ShowVictory(string _text)
     {
-        if(p1Score > p2Score)
-        {
-            victoryText.text = "Player 1 won the match!!";
-        }
-        else if(p1Score < p2Score)
-        {
-            victoryText.text = "Player 2 won the match!!";
-        }
-        else if(p1Score == p2Score)
-        {
-            victoryText.text = "It was a draw!";
-        }
+        victoryText.text = _text;
 
         victoryPanel.SetActive(true);
     }

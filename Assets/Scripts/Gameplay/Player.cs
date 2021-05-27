@@ -76,6 +76,14 @@ public class Player : MonoBehaviour
                 GameUI.instance.SetPlayer2Display(Score);
             }
         }
+
+        if (collision.gameObject.tag == "PowerUp")
+        {
+            collision.gameObject.SetActive(false);
+            collision.gameObject.GetComponent<PowerUp>().ResetPosition();
+            speed += 1f;
+
+        }
     }
 
 
