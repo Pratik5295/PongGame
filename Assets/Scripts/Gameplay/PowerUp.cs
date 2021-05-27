@@ -14,7 +14,12 @@ public class PowerUp : Ball
 
     public override void StartGame()
     {
-        this.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-1f, 1f) * moveSpeed,0f);
+        float xVel = Random.Range(-3f, 3f);
+        if(xVel == 0)
+        {
+            xVel = 2f;
+        }
+        this.GetComponent<Rigidbody2D>().velocity = new Vector2(xVel * moveSpeed,0f);
      
     }
 
